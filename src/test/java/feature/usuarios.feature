@@ -13,3 +13,8 @@ Característica: Gestión de Usuarios
     Dado que el usuario quiere obtener todos los usuarios
     Cuando se solicita la información del usuario
     Entonces el código de estado de la respuesta debe ser 200
+
+  Escenario: Editar un usuario
+    Dado que un administrador quiere editar a un usuario
+    Cuando se ingresan los nuevos datos del usuario
+    Entonces la información del usuario será actualizada
