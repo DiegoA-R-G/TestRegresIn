@@ -47,9 +47,9 @@ public class PutUser {
     void getUser() {
         given()
                 .contentType(ContentType.JSON)
-        .when()
+                .when()
                 .get("users/23")
-        .then()
+                .then()
                 .statusCode(HttpStatus.SC_NOT_FOUND);
     }
 }
