@@ -1,5 +1,4 @@
 package co.com.sofka.objeto;
-import com.fasterxml.jackson.annotation.JsonProperty;
 public class Users {
     private String createdAt;
 
@@ -8,7 +7,6 @@ public class Users {
     private String id;
 
     private String job;
-    @JsonProperty("createdAt")
     public String getCreatedAt() {
         return createdAt;
     }
@@ -16,17 +14,14 @@ public class Users {
     {
         this.createdAt = createdAt;
     }
-    @JsonProperty("name")
     public String getName ()
     {
         return name;
     }
-
     public void setName (String name)
     {
         this.name = name;
     }
-    @JsonProperty("id")
     public String getId ()
     {
         return id;
@@ -36,7 +31,6 @@ public class Users {
     {
         this.id = id;
     }
-    @JsonProperty("job")
     public String getJob ()
     {
         return job;

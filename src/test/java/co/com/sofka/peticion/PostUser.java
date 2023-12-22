@@ -19,13 +19,11 @@ class PostUser {
         RestAssured.baseURI = "https://reqres.in/";
         RestAssured.basePath = "/api";
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
-
-
     }
     @Test
     void createUser(){
         Users user = new Users();
-                user.setName("morpheus");
+        user.setName("morpheus");
         user.setJob("leader");
 
         given()

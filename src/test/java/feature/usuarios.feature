@@ -5,9 +5,9 @@ Característica: Gestión de Usuarios
   Escenario: Crear un nuevo usuario
     Dado que el usuario se va a registrar
     Cuando se crea un usuario con los siguientes detalles:
-      | name    | job |
-      | morpheus  | lider   |
     Entonces el codigo de estado de la respuesta debe ser 201
+      | name    |   job |
+      | morpheus  | lider   |
 
   Escenario: Obtener información de usuario
     Dado que el usuario quiere obtener todos los usuarios
